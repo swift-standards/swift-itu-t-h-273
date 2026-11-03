@@ -1,0 +1,11 @@
+# .github/metadata.yaml
+description: "Swift implementation of ITU-T H.273: Coding-independent code points for video signal type identification."
+topics:
+  - standards
+  - itu
+  - itu-t-h-273
+  - video
+  - color-spaces
+homepage: "https://swift-institute.org"
+readme:
+  family: E

@@ -2,4 +2,4 @@ version: 1
 builder:
   configs:
   - documentation_targets:
-    - ITU-T H.273
+    - ITU-T H 273

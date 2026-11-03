@@ -12,18 +12,18 @@ let package = Package(
         .visionOS(.v27),
     ],
     products: [
-        .library(name: "ITU-T H.273", targets: ["ITU-T H.273"])
+        .library(name: "ITU-T H 273", targets: ["ITU-T H 273"])
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "ITU-T H.273",
+            name: "ITU-T H 273",
             dependencies: []
         ),
         .testTarget(
-            name: "ITU-T H.273 Tests",
+            name: "ITU-T H 273 Tests",
             dependencies: [
-                .target(name: "ITU-T H.273")
+                .target(name: "ITU-T H 273")
             ]
         ),
     ],

@@ -1,4 +1,4 @@
-extension ITU_T_H_273 {
+extension ITU.T.H.`273` {
     /// A video signal type: the four code points together.
     public struct Signal: Sendable, Hashable {
         public var primaries: Primaries
@@ -15,7 +15,7 @@ extension ITU_T_H_273 {
     }
 }
 
-extension ITU_T_H_273.Signal {
+extension ITU.T.H.`273`.Signal {
     /// Rec. ITU-R BT.709 video, 1-1-1 at limited range.
     public static let bt709 = Self(primaries: .bt709, transfer: .bt709, matrix: .bt709, range: .limited)
 
@@ -27,7 +27,7 @@ extension ITU_T_H_273.Signal {
     /// Pictures rendered in sRGB and encoded with the BT.709 matrix are `sRGB.carried(by: .bt709)`:
     /// 1-13-1 at limited range. Tagging them BT.709's 1-1-1 tells a player to decode them with a
     /// different transfer function than they were made with.
-    public func carried(by matrix: ITU_T_H_273.Matrix, at range: ITU_T_H_273.Range = .limited) -> Self {
+    public func carried(by matrix: ITU.T.H.`273`.Matrix, at range: ITU.T.H.`273`.Range = .limited) -> Self {
         Self(primaries: primaries, transfer: transfer, matrix: matrix, range: range)
     }
 

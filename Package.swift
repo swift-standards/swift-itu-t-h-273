@@ -14,11 +14,13 @@ let package = Package(
     products: [
         .library(name: "ITU-T H 273", targets: ["ITU-T H 273"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/swift-standards/swift-itu.git", branch: "main")
+    ],
     targets: [
         .target(
             name: "ITU-T H 273",
-            dependencies: []
+            dependencies: [.product(name: "ITU", package: "swift-itu")]
         ),
         .testTarget(
             name: "ITU-T H 273 Tests",

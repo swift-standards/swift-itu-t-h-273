@@ -1,4 +1,4 @@
-extension ITU_T_H_273 {
+extension ITU.T.H.`273` {
     /// TransferCharacteristics, H.273 table 3.
     public enum Transfer: UInt8, Sendable, Hashable, CaseIterable {
         /// Rec. ITU-R BT.709.
@@ -35,7 +35,7 @@ extension ITU_T_H_273 {
     }
 }
 
-extension ITU_T_H_273.Transfer {
+extension ITU.T.H.`273`.Transfer {
     /// The value H.273 writes for this TransferCharacteristics.
     public var code: UInt8 { self.rawValue }
 }

@@ -1,4 +1,4 @@
-extension ITU_T_H_273 {
+extension ITU.T.H.`273` {
     /// MatrixCoefficients, H.273 table 4.
     public enum Matrix: UInt8, Sendable, Hashable, CaseIterable {
         /// No matrix: the samples are G, B and R, as in IEC 61966-2-1 sRGB pictures.
@@ -29,7 +29,7 @@ extension ITU_T_H_273 {
     }
 }
 
-extension ITU_T_H_273.Matrix {
+extension ITU.T.H.`273`.Matrix {
     /// The value H.273 writes for this MatrixCoefficients.
     public var code: UInt8 { self.rawValue }
 }

@@ -1,4 +1,4 @@
-extension ITU_T_H_273 {
+extension ITU.T.H.`273` {
     /// ColourPrimaries, H.273 table 2.
     public enum Primaries: UInt8, Sendable, Hashable, CaseIterable {
         /// Rec. ITU-R BT.709, also the primaries of IEC 61966-2-1 sRGB.
@@ -26,7 +26,7 @@ extension ITU_T_H_273 {
     }
 }
 
-extension ITU_T_H_273.Primaries {
+extension ITU.T.H.`273`.Primaries {
     /// The value H.273 writes for this ColourPrimaries.
     public var code: UInt8 { self.rawValue }
 }
